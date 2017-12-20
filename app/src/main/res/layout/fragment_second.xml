@@ -1,0 +1,51 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context="com.example.spark1435.midterm.SecondFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Name"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+    <TextView
+        android:id="@+id/emptyLabel1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/commentLabel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Comment"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/commentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+    <TextView
+        android:id="@+id/emptyLabel2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/addCommentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Submit" />
+
+
+
+</TableLayout>
