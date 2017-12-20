@@ -8,14 +8,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.spark1435.midterm.MainActivity">
 
-<Button
-    android:id="@+id/addCommentButton"
-    android:onClick="onClick"
-    android:text="Add Comments" />
+    <Button
+        android:id="@+id/addCommentButton"
+        android:onClick="onClick"
+        android:text="Add Comments" />
 
-<Button
-    android:id="@+id/contactButton"
-    android:onClick="onClick"
-    android:text="Contact Us" />
+    <Button
+        android:id="@+id/contactButton"
+        android:onClick="onClick"
+        android:text="Contact Us" />
 
+    <TextView
+        android:id="@+id/emptyLabel1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/mobile_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
 </TableLayout>
