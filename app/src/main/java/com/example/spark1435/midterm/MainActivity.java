@@ -3,6 +3,7 @@ package com.example.spark1435.midterm;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -82,8 +83,8 @@ public class MainActivity extends AppCompatActivity {
                     sendMessage1(view);
                     break;
                 case R.id.contactButton:
-                    Intent intent = new Intent(Intent.ACTION_MAIN);
-                    intent.addCategory(Intent.CATEGORY_APP_MESSAGING);
+                    Intent intent = new Intent(Intent.ACTION_SENDTO);
+                    intent.setData(Uri.parse("smsto:" + Uri.encode("1234")));
                     startActivity(intent);
                     break;
         }
